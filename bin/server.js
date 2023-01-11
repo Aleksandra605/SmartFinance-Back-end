@@ -6,7 +6,6 @@ const PORT = process.env.PORT || 3001;
 
 const mongoose = require('mongoose');
 const { DB_HOST } = process.env;
-// 'mongodb+srv://Aleksandra605:Boebobo123@cluster0.mcwxr.mongodb.net/db-contacts?retryWrites=true&w=majority';
 
 mongoose
   .connect(DB_HOST)
