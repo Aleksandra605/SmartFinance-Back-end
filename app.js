@@ -5,10 +5,15 @@ const authRouter = require('./routes/api/auth');
 const transactionRouter = require('./routes/api/transactionsRouter');
 const app = express();
 
+var corsOptions = {
+  origin: 'https://aleksandra605.github.io/smart-finance/',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+
 const formatsLogger = app.get('env') === 'development' ? 'dev' : 'short';
 
 app.use(logger(formatsLogger));
-app.use(cors({origin: 'https://aleksandra605.github.io/smart-finance/'}));
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.static('public'));
 
