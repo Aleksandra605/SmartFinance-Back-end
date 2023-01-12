@@ -6,7 +6,7 @@ const transactionRouter = require('./routes/api/transactionsRouter');
 const app = express();
 
 var corsOptions = {
-  origin: 'https://aleksandra605.github.io',
+  origin: 'https://aleksandra605.github.io/Smart-finance/',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
