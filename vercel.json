@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "routes/api/test.js",
+      "source": "./test.js",
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
         { "key": "Access-Control-Allow-Origin", "value": "*" },
